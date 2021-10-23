@@ -64,6 +64,7 @@ Gedit id_rsa.pub
     创建新分支：git branch branchName
 
     切换到新分支：git checkout branchName
+
 9.  git branch -d （新分支名称（不需要双引号，同时去掉括号））
 
     删除指定分支
@@ -82,7 +83,7 @@ Gedit id_rsa.pub
 
 13.  git reset --hard HASH
 
-    返回到指定节点，不保留修改
+        返回到指定节点，不保留修改
 
 14. git  reset HEAD (文件名称)
 
