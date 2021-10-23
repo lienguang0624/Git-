@@ -1,2 +1,82 @@
+- [Git-](#git-)
+- [零.安装及添加账户](#零安装及添加账户)
+- [一.基本指令](#一基本指令)
+- [二.应用场景](#二应用场景)
+- [三.疑难杂症](#三疑难杂症)
 # Git-
 git使用说明；应用场景使用指南；git使用轮子大全
+# 零.安装及添加账户
+1. 检查git是否已经安装，输入git version命令即可，如果没有显示版本号表示没有安装git
+
+2. 安装git
+sudo apt-get install git
+
+3. 配置git全局环境
+git config --global user.name "用户名"
+git config --global user.email "邮箱地址"
+
+4. 生成ssh密钥
+ssh-keygen -C 'you email address@gmail.com' -t rsa
+会在用户目录~/.ssh/下建立相应的密钥文件。
+
+5. 创建完公钥后，需要上传。
+使用命令cd ~/.ssh进入~/.ssh文件夹，输入
+Gedit id_rsa.pub
+打开id_rsa.pub文件，复制其中所有内容。接着访问git网页，点击SSH公钥，标题栏可以随意输入，公钥栏把刚才复制的内容粘贴进去。
+
+# 一.基本指令
+git clone url地址
+第一次拉取项目时使用
+
+git diff
+比较工作区和上一版本有何差异
+
+git  status 
+查看当前路径下的状态
+
+git add .
+将工作区的所有变动放置于暂存区
+
+git commit -m "提交时说明信息"
+进一步提交，并提交说明log
+
+git push
+将更新内容推送至远程服务器
+
+git pull
+将代码从远程服务器拉取到本地
+
+# 二.应用场景
+
+标准上传文件
+git  status 
+查看当前路径下的状态
+
+git add .
+将工作区的所有变动放置于暂存区
+
+git commit -m "提交时说明信息"
+进一步提交，并提交说明log
+
+git push
+将更新内容推送至远程服务器
+
+应用场景2：
+
+
+# 三.疑难杂症
+1. git使用commit命令后显示Author identity unknown的解决方法：
+
+   在git命令行中重新输入命令：
+
+   先输入：$ git config --global user.name "你的名字"
+
+   回车后，
+
+   再输入：$ git config --global user.email "你的邮箱地址"
+
+   完成后再提交就没问题了。
+
+   ![Author identity unknown](https://github.com/lienguang0624/Git-/blob/main/img/Author%20identity%20unknown.png?raw=true "Author identity unknown")
+
+   
