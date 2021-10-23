@@ -67,7 +67,19 @@ Gedit id_rsa.pub
 
     删除指定分支
 
-10. 
+10. git pull
+
+    更新你的本地仓库至最新改动
+
+11. git checkout .
+
+    丢弃你所有的本地改动与提交
+
+12.  git reset --hard HASH
+
+    返回到指定节点，不保留修改
+
+13. 
 
 # 二.应用场景
 
@@ -110,5 +122,14 @@ Gedit id_rsa.pub
 
 在当前用户下执行命令：ssh-add即可解决
   ![Agent admitted failure to sign using the key](https://github.com/lienguang0624/Git-/blob/main/img/Agent%20admitted%20failure%20to%20sign%20using%20the%20key.png?raw=true "Agent admitted failure to sign using the key")
+
+
+**3. git分支切换时，提示Deletion of directory '*********' failed. Should I try again？**
+
+
+问题的原因是你工作目录有某些文件正在被程序使用，这个程序多半是Idea,vsCode或者eclipse,当然也可能是其他程序。
+
+
+解决方案不是简单的选择y或者n，而是关闭vsCode，让vsCode把这些文件释放掉。
 
    
