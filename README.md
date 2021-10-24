@@ -155,6 +155,7 @@ Gedit id_rsa.pub
     ![pull拉取远程最新代码（shell端）]( https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E5%86%B2%E7%AA%81%E4%BA%A7%E7%94%9F%E5%90%8E%E7%9A%84pull%E7%9A%84shell%E5%91%BD%E4%BB%A4%E8%A1%8C.jpg?raw=true "pull拉取远程最新代码（shell端）")
  
  5. 手动修改冲突
+   
      ![手动修改冲突](  https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E4%BF%AE%E6%94%B9pull%E5%90%8Egit%E7%94%9F%E6%88%90%E7%9A%84%E5%86%B2%E7%AA%81%E5%AF%B9%E6%AF%94.jpg?raw=true "手动修改冲突")
 
  6. 而后执行以下命令即可
