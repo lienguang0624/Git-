@@ -2,8 +2,9 @@
 - [零.安装及添加账户](#零安装及添加账户)
 - [一.基本指令](#一基本指令)
 - [二.应用场景](#二应用场景)
-  - [标准上传文件](#标准上传文件)
-  - [在你上传新版本前，有同事上传了新版本](#在你上传新版本前有同事上传了新版本)
+  - [1. 标准上传文件](#1-标准上传文件)
+  - [2. 在你上传新版本前，有同事上传了新版本（代码更改位置不冲突）](#2-在你上传新版本前有同事上传了新版本代码更改位置不冲突)
+  - [3. 在你上传新版本前，有同事上传了新版本(代码更改位置冲突)](#3-在你上传新版本前有同事上传了新版本代码更改位置冲突)
 - [三.疑难杂症](#三疑难杂症)
 # Git-
 git使用说明；应用场景使用指南；git使用轮子大全
@@ -93,7 +94,7 @@ Gedit id_rsa.pub
 
 # 二.应用场景
 
-## 标准上传文件
+## 1. 标准上传文件
    1. git  status 
    
         查看当前路径下的状态
@@ -110,7 +111,7 @@ Gedit id_rsa.pub
         
         将更新内容推送至远程服务器
 
-## 在你上传新版本前，有同事上传了新版本
+## 2. 在你上传新版本前，有同事上传了新版本（代码更改位置不冲突）
    1. git  status 
    
         查看当前路径下的状态
@@ -135,6 +136,31 @@ Gedit id_rsa.pub
         
         将修改取出
 
+## 3. 在你上传新版本前，有同事上传了新版本(代码更改位置冲突)
+
+ 1. 初始代码
+ 
+   ![初始代码]( https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E5%88%9D%E5%A7%8B%E4%BB%A3%E7%A0%81.jpg?raw=true "初始代码")
+
+ 
+ 2. 在另一个目录下clone 工程，并更新代码，而后上传
+    ![另一文件夹下更新的代码]( https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E5%8F%A6%E4%B8%80%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%9B%B4%E6%96%B0%E4%BB%A3%E7%A0%81.jpg?raw=true "另一文件夹下更新的代码")
+ 
+ 3. 在原目录下相同位置更新代码并上传，产生冲突
+     ![相同位置更新代码并上传，产生冲突]( https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_push%E4%BA%A7%E7%94%9F%E5%86%B2%E7%AA%81.jpg?raw=true "相同位置更新代码并上传，产生冲突")
+ 
+ 
+ 4. pull拉取远程最新代码
+      ![pull拉取远程最新代码（代码段）]( https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E5%86%B2%E7%AA%81%E4%BA%A7%E7%94%9F%E5%90%8E%E7%9A%84pull.jpg?raw=true "pull拉取远程最新代码（代码段）")
+    ![pull拉取远程最新代码（shell端）]( https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E5%86%B2%E7%AA%81%E4%BA%A7%E7%94%9F%E5%90%8E%E7%9A%84pull%E7%9A%84shell%E5%91%BD%E4%BB%A4%E8%A1%8C.jpg?raw=true "pull拉取远程最新代码（shell端）")
+ 
+ 5. 手动修改冲突
+     ![手动修改冲突](  https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E4%BF%AE%E6%94%B9pull%E5%90%8Egit%E7%94%9F%E6%88%90%E7%9A%84%E5%86%B2%E7%AA%81%E5%AF%B9%E6%AF%94.jpg?raw=true "手动修改冲突")
+
+ 6. 而后执行以下命令即可
+    1. git add -u （-u参数表示把文件区跟踪的文件添加到缓存区）
+    2. git commit -m "message"
+    3. git push
 
 
 # 三.疑难杂症
