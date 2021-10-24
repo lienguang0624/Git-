@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 here is D
 Bit now here is B,and up line also change
+=======
+here is B
+>>>>>>> dfc166d93308981ff647df0fa9c7e1c692bd2959
