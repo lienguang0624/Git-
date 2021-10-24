@@ -90,7 +90,6 @@ Gedit id_rsa.pub
 
     取消已被add添加到暂存区的文件
 
-15. 
 
 # 二.应用场景
 
@@ -140,7 +139,7 @@ Gedit id_rsa.pub
 
  1. 初始代码
  
-   ![初始代码]( https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E5%88%9D%E5%A7%8B%E4%BB%A3%E7%A0%81.jpg?raw=true "初始代码")
+    ![初始代码]( https://github.com/lienguang0624/Git-/blob/main/img/%E5%86%B2%E7%AA%81%E8%AF%95%E9%AA%8C_%E5%88%9D%E5%A7%8B%E4%BB%A3%E7%A0%81.jpg?raw=true "初始代码")
 
  
  2. 在另一个目录下clone 工程，并更新代码，而后上传
